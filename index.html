@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Chat на моем сайте</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            background-color: #f0f0f0;
+        }
+        .chat-container {
+            width: 400px;
+            border: 2px solid #9146FF; /* Фиолетовый цвет Twitch */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        /* Опционально: скрыть заголовок внутри фрейма */
+        iframe {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Чат стримера etozheygryk</h1>
+        <!-- ВСТАВЬТЕ ВАШ IFrame ЗДЕСЬ -->
+        <iframe
+            src="https://www.twitch.tv/embed/etozheygryk/chat?parent=localhost"
+            height="500"
+            width="100%">
+        </iframe>
+        <!-- Конец IFrame -->
+    </div>
+</body>
+</html>
